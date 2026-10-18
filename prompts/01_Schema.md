@@ -53,7 +53,7 @@
             "items": {
               "type": "string"
             },
-            "description": "Key scene-relevant facts this character does not know or cannot verify from their own observations or received information. One knowledge gap per item, in Russian. Do not transfer narrator or other characters' knowledge to this character, reveal hidden answers, or assume ignorance of established knowledge. Use an empty array if no relevant gaps are established."
+            "description": "Key scene-relevant facts this character does not know or cannot verify from their own observations or received information. One knowledge gap per item, in Russian, phrased as a brief, plain question fragment. State only the essence of what is unknown; omit 'does not know', explanations, event recaps and unnecessary circumstances while preserving essential meaning and distinct gaps. Do not transfer narrator or other characters' knowledge to this character, reveal hidden answers, or assume ignorance of established knowledge. Use an empty array if no relevant gaps are established."
           }
         },
         "required": [
