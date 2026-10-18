@@ -55,14 +55,6 @@
             "type": "string",
             "description": "Character name"
           },
-          "hair": {
-            "type": "string",
-            "description": "Hairstyle and condition"
-          },
-          "makeup": {
-            "type": "string",
-            "description": "Makeup description or 'None'"
-          },
           "outfit": {
             "type": "string",
             "description": "Complete outfit including underwear"
@@ -74,15 +66,29 @@
           "postureAndInteraction": {
             "type": "string",
             "description": "Character's physical positioning and interaction"
+          },
+          "limited": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Scene-relevant physical, sensory and technical limitations supported by context: movement, visibility, hearing, communication or device capabilities. One limitation per item, in Russian. Use an empty array if none are established; do not invent restrictions."
+          },
+          "notKnow": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Key scene-relevant facts this character does not know or cannot verify from their own observations or received information. One knowledge gap per item, in Russian. Do not transfer narrator or other characters' knowledge to this character, reveal hidden answers, or assume ignorance of established knowledge. Use an empty array if no relevant gaps are established."
           }
         },
         "required": [
           "name",
-          "hair",
-          "makeup",
           "outfit",
           "stateOfDress",
-          "postureAndInteraction"
+          "postureAndInteraction",
+          "limited",
+          "notKnow"
         ]
       },
       "description": "Array of character objects"

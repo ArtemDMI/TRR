@@ -48,14 +48,6 @@
             <table>
                 <tbody>
                     <tr>
-                        <td>Hair:</td>
-                        <td>{{character.hair}}</td>
-                    </tr>
-                    <tr>
-                        <td>Makeup:</td>
-                        <td>{{character.makeup}}</td>
-                    </tr>
-                    <tr>
                         <td>Outfit:</td>
                         <td>{{character.outfit}}</td>
                     </tr>
@@ -66,6 +58,14 @@
                     <tr>
                         <td>Position:</td>
                         <td>{{character.postureAndInteraction}}</td>
+                    </tr>
+                    <tr>
+                        <td>Limited:</td>
+                        <td>{{#each character.limited}}{{this}}{{#unless @last}}; {{/unless}}{{else}}Ограничения не установлены{{/each}}</td>
+                    </tr>
+                    <tr>
+                        <td>NotKnow:</td>
+                        <td>{{#each character.notKnow}}{{this}}{{#unless @last}}; {{/unless}}{{else}}Ключевые пробелы в знаниях не установлены{{/each}}</td>
                     </tr>
                 </tbody>
             </table>
