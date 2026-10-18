@@ -6,6 +6,8 @@ NPC не должны предпологать, то что не узнали. �
 
 ### Key Instructions:
 
+**Character Exclusion (always applies)**: Never generate a character tracker for Артем (Артём). Omit him from the `characters` array entirely, even if a previous tracker contains his entry; do not generate an empty or placeholder entry for him. He may still appear in `charactersPresent` when present in the scene and be mentioned in other characters' interactions. This exclusion takes precedence over all instructions to track every character or preserve previous details.
+
 1. **Default Assumptions for Missing Information**:
    - **Character Details**: Track only `name`, `outfit`, `postureAndInteraction`, `limited`, and `notKnow` for each character. Do not include `hair`, `makeup`, or `stateOfDress`. If no new details are provided, retain previously established details that remain consistent with the current scene.
    - **Outfit**: Describe the complete outfit for each character, using specific details for color, fabric, and style (e.g., “Белая полупрозрачная майка с принтом собаки”). **Underwear must always be included in the outfit description.** If underwear is intentionally missing, specify this clearly in the description (e.g., "Без лифчика", "Без трусиков"). If the character is undressed, list the entire outfit.
