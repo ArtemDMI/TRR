@@ -23,8 +23,8 @@
         <table>
             <tbody>
                 <tr>
-                    <td>Envaroment:</td>
-                    <td>{{data.envaroment}}</td>
+                    <td>Environment:</td>
+                    <td>{{data.environment}}</td>
                 </tr>
                 <tr>
                     <td>Present:</td>
@@ -44,10 +44,6 @@
             <strong>{{character.name}}:</strong><br>
             <table>
                 <tbody>
-                    <tr>
-                        <td>Outfit:</td>
-                        <td>{{character.outfit}}</td>
-                    </tr>
                     <tr>
                         <td>Position:</td>
                         <td>{{character.postureAndInteraction}}</td>

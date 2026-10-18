@@ -16,7 +16,7 @@
       "type": "string",
       "description": "Current weather conditions and temperature"
     },
-    "envaroment": {
+    "environment": {
       "type": "string",
       "description": "One shared description in Russian of the visible surroundings of the current scene, at most 150 words, in a concise, factual dungeon-master style. Describe established nearby objects, their condition, spatial relationships, visible paths and obstacles at the end of the latest message. Use only details supported by context; do not invent scenery, reveal hidden areas, narrate actions, or list topics and emotions. This scene overview does not imply that every character has noticed everything described."
     },
@@ -36,10 +36,6 @@
           "name": {
             "type": "string",
             "description": "Character name"
-          },
-          "outfit": {
-            "type": "string",
-            "description": "Complete outfit including underwear"
           },
           "postureAndInteraction": {
             "type": "string",
@@ -62,7 +58,6 @@
         },
         "required": [
           "name",
-          "outfit",
           "postureAndInteraction",
           "limited",
           "notKnow"
@@ -75,7 +70,7 @@
     "time",
     "location",
     "weather",
-    "envaroment",
+    "environment",
     "charactersPresent",
     "characters"
   ]
