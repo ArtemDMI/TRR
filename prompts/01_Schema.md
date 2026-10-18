@@ -41,10 +41,6 @@
             "type": "string",
             "description": "Complete outfit including underwear"
           },
-          "stateOfDress": {
-            "type": "string",
-            "description": "How put-together/disheveled character appears"
-          },
           "postureAndInteraction": {
             "type": "string",
             "description": "Character's physical positioning and interaction"
@@ -67,7 +63,6 @@
         "required": [
           "name",
           "outfit",
-          "stateOfDress",
           "postureAndInteraction",
           "limited",
           "notKnow"

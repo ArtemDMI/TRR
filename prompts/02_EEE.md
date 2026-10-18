@@ -49,10 +49,6 @@
                         <td>{{character.outfit}}</td>
                     </tr>
                     <tr>
-                        <td>State:</td>
-                        <td>{{character.stateOfDress}}</td>
-                    </tr>
-                    <tr>
                         <td>Position:</td>
                         <td>{{character.postureAndInteraction}}</td>
                     </tr>
