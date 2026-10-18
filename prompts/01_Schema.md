@@ -16,27 +16,9 @@
       "type": "string",
       "description": "Current weather conditions and temperature"
     },
-    "topics": {
-      "type": "object",
-      "properties": {
-        "primaryTopic": {
-          "type": "string",
-          "description": "1-2 word main topic of interaction"
-        },
-        "emotionalTone": {
-          "type": "string",
-          "description": "Dominant emotional tone of scene"
-        },
-        "interactionTheme": {
-          "type": "string",
-          "description": "Type of character interaction"
-        }
-      },
-      "required": [
-        "primaryTopic",
-        "emotionalTone",
-        "interactionTheme"
-      ]
+    "envaroment": {
+      "type": "string",
+      "description": "One shared description in Russian of the visible surroundings of the current scene, at most 150 words, in a concise, factual dungeon-master style. Describe established nearby objects, their condition, spatial relationships, visible paths and obstacles at the end of the latest message. Use only details supported by context; do not invent scenery, reveal hidden areas, narrate actions, or list topics and emotions. This scene overview does not imply that every character has noticed everything described."
     },
     "charactersPresent": {
       "type": "array",
@@ -98,7 +80,7 @@
     "time",
     "location",
     "weather",
-    "topics",
+    "envaroment",
     "charactersPresent",
     "characters"
   ]

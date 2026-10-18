@@ -23,11 +23,8 @@
         <table>
             <tbody>
                 <tr>
-                    <td>Topics:</td>
-                    <td>
-                        <!-- Accessing nested object properties -->
-                        {{data.topics.primaryTopic}}; {{data.topics.emotionalTone}}; {{data.topics.interactionTheme}}
-                    </td>
+                    <td>Envaroment:</td>
+                    <td>{{data.envaroment}}</td>
                 </tr>
                 <tr>
                     <td>Present:</td>
